@@ -1,0 +1,7 @@
+# Normalize line endings to LF on all platforms.
+* text=auto eol=lf
+
+# Asset Library archive: ship only /addons.
+/**        export-ignore
+/addons    !export-ignore
+/addons/** !export-ignore

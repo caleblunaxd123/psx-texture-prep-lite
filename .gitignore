@@ -1,0 +1,23 @@
+# Godot 4+
+.godot/
+.nomedia
+
+# Imported translations
+*.translation
+
+# Mono / misc
+.mono/
+data_*/
+mono_crash.*.json
+
+# Local test output
+tests/verify_report.tmp
+
+# Generated verification / preview scratch
+tests/_preview_raw/
+tests/verify_godot_stdout.txt
+tests/verify_godot_stderr.txt
+
+# Addon output folders (sibling *_psx from the editor menu)
+*_psx/
+*.import
