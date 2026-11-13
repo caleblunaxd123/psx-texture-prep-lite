@@ -1,0 +1,46 @@
+PSX Texture Prep Lite - verify report
+4.7.2-stable (official)
+
+PASS 1 PsxTexturePrep loads
+PASS 1 PsxBatch loads
+PASS 1 plugin.gd parses
+PASS 2 nearest 100x60 -> 128x64
+PASS 2 crop 100x60 -> 64x32
+PASS 2 pad 100x60 -> 128x64
+PASS 2 pad is centred, unscaled, transparent border
+PASS 2 crop is centred
+PASS 2 input not mutated
+PASS 2 always power of two
+PASS 2 max_side 100 -> sides <= 64
+PASS 2 tie rounds up (96x48 -> 128x64)
+PASS 3 rgb555 5-bit levels (dither=false)
+PASS 3 rgb555 5-bit levels (dither=true)
+PASS 3 rgb555 dither matches fixed formula
+PASS 3 alpha threshold 0.5
+PASS 3 input not mutated
+PASS 4 palette <=16 distinct (dither=false)
+PASS 4 palette covers image (dither=false)
+PASS 4 palette <=16 distinct (dither=true)
+PASS 4 palette covers image (dither=true)
+PASS 4 palette 2 colors
+PASS 4 colors clamped to 256
+PASS 4 palette deterministic
+PASS 5 dither output differs from plain
+PASS 5 dither pattern periodic every 4 px
+PASS 5 pattern varies between rows (2D Bayer)
+PASS 5 palette dither differs from plain
+PASS 6 batch ok
+PASS 6 processed 4 files
+PASS 6 corrupt file reported, batch continued
+PASS 6 expected PNG outputs with sub-folders
+PASS 6 output a.png is 128x64
+PASS 6 source untouched (hashes)
+PASS 6 existing outputs skipped without overwrite
+PASS 6 overwrite option rewrites
+PASS 6 dst inside src refused
+PASS 6 dst == src refused
+PASS 6 source untouched after refusals
+PASS 6 palette batch <= 8 colors
+PASS 7 two runs identical hashes
+PASS 7 palette runs identical hashes
+SUMMARY: 42 passed, 0 failed
